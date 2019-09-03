@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Crystal Collector</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    </head>
+    <body background="assets/images/bg.jpg">
+        <div id="container">
+            <div id="h2">
+            <h2>Crystal Collector!</h2>
+            </div>
+
+            <div id="h4">
+                <h4>You will be given a random number at the start of the 
+                    <br>game.</h4>
+                <h4>There are four crystals below. By clicking on the crystal you <br>will add a specific amounts of
+                points to your total score.<br>
+                </h4>
+                <h4>You win the game by matching your total score to random <br>number, you lose the game if your 
+                total score goes above <br>the random number.<br>
+                </h4>
+                <h4>The value of each crystal is hidden from you <br>until you click on it.<br></h4>
+                <h4>Each time when the game starts, the game will change the <br>values of each crystal</h4>
+            </div>
+
+            <div class="random">
+                <div id="h3">
+                    <h3><span id="random"></span></h3>
+                </div>
+
+                <div id="p">
+                    <p><span id="youwin"></span></p>
+                    <p><span id="youlose"></span></p>
+                    <p>Wins : <span id="wins"></span></p>
+                    <p>Losses : <span id="losses"></span></p>
+            </div>
+            </div>
+
+            <br>
+            
+            <div id="images">
+                <!-- <img src = "assets/images/1.jpg"alt="diamond"width="100px"height="100px"id="img1"> -->
+                <button id="btn1"><img src="assets/images/1.jpg"id="img1"width="100px"height="100px"/></button>
+                <!-- <img src = "assets/images/2.jpg"alt="stone"width="100px"height="100px"id="img2"> -->
+                <button id="btn2"><img src="assets/images/2.jpg"id="img2"width="100px"height="100px"/></button>
+                <!-- <img src = "assets/images/3.jpg"alt="bulb"width="100px"height="100px"id="img3"> -->
+                <button id="btn3"><img src="assets/images/3.jpg"id="img3"width="100px"height="100px"/></button>
+                <!-- <img src = "assets/images/4.jpg"alt="emarald"width="100px"height="100px"id="img4"> -->
+                <button id="btn4"><img src="assets/images/4.jpg"id="img4"width="100px"height="100px"/></button>
+            </div>
+
+            <div id="p1">
+                <p>Your total score is</p>
+            </div>
+
+            <div id="score">
+                <h3>Score : <span id="score"></span></h3>
+            </div>
+
+                        <!-- First Row
+                        <div class="row">
+                            Column 1
+                                    <div class="col-md-6">
+                                        <h3>39</h3>
+                                    </div>
+                                    Column 2
+                                    <div class="col-md-6">
+                                        
+                                        <p>Wins : </p>
+                                      
+                                        <p>Losses : </p>
+                                      
+                                    </div>
+                
+                            </div> -->
+
+
+         </div>
+         <script src="assets/javascript/game.js"></script>
+    </body>
+</html>
