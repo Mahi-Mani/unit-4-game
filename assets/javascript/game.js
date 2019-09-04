@@ -51,6 +51,7 @@ $("#img1").on("click", function(){
     // var crystal1 = Math.floor(Math.random() * (12 - 1 + 1) + 1);
     console.log("Crystal 1: "+startGame.crystal1);
     score = score + startGame.crystal1;
+    // score = score + $(this).val();
     console.log("Score 1: "+score);   
     populateScore();
 });
