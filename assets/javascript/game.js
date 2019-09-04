@@ -30,17 +30,20 @@ populateScore();
 //Function to generate random number
 function generateRandomNumber(){
 random = Math.floor(Math.random() * (120 - 19 + 1) + 19);
-document.getElementById("random").innerHTML = random;
+// document.getElementById("random").innerHTML = random;
+$("#random").text(random);
 console.log("Random number: "+random);
 
 }
 function initializeWins(){
-    document.getElementById("wins").innerHTML = 0 ;
+    // document.getElementById("wins").innerHTML = 0 ;
+    $("#wins").text(0);
 }
 
 
 function initializeLosses(){
-    document.getElementById("losses").innerHTML = 0 ;
+    // document.getElementById("losses").innerHTML = 0 ;
+    $("#losses").text(0);
 }
 
 function game(){
@@ -78,7 +81,8 @@ $("#img4").on("click", function(){
 }
 
 function populateScore(){
-    document.getElementById("score").innerHTML = score;
+    // document.getElementById("score").innerHTML = score;
+    $("#score").text(score);
     gameLogic();
 }
 
@@ -97,12 +101,16 @@ if(score > random){
 function populateWins(){
     // wins = wins + 1;
     var youwin = ' ';
-    document.getElementById("youwin").innerHTML = youwin ;
+    // document.getElementById("youwin").innerHTML = youwin ;
+    $("#youwin").text(youwin);
     populateLosses.youlose = ' ';
-    document.getElementById("youlose").innerHTML = populateLosses.youlose ;
-    document.getElementById("wins").innerHTML = wins ;
-    youwin = "You Win !"
-    document.getElementById("youwin").innerHTML = youwin ;
+    // document.getElementById("youlose").innerHTML = populateLosses.youlose ;
+    $("#youlose").text(populateLosses.youlose);
+    // document.getElementById("wins").innerHTML = wins ;
+    $("#wins").text(wins);
+    youwin = "You Win !";
+    // document.getElementById("youwin").innerHTML = youwin ;
+    $("#youwin").text(youwin);
     // reset();
     
 }
@@ -110,12 +118,16 @@ function populateWins(){
 function populateLosses(){
     // losses = losses + 1;
     populateWins.youwin = ' ';
-    document.getElementById("youwin").innerHTML = populateWins.youwin;
+    // document.getElementById("youwin").innerHTML = populateWins.youwin;
+    $("#youwin").text(populateWins.youwin);
     var youlose = ' ';
-    document.getElementById("youlose").innerHTML = youlose ;
-    document.getElementById("losses").innerHTML = losses ;
+    // document.getElementById("youlose").innerHTML = youlose ;
+    $("#youlose").text(youlose);
+    // document.getElementById("losses").innerHTML = losses ;
+    $("#losses").text(losses);
     youlose = "You Lost !"
-    document.getElementById("youlose").innerHTML = youlose ;
+    // document.getElementById("youlose").innerHTML = youlose ;
+    $("#youlose").text(youlose);
     // reset();
 }
 }
