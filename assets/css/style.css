@@ -5,7 +5,8 @@ body{
 #container{
     width:100%;
     /* background-color: aquamarine; */
-    /* background-image: url("images/bg.jpg"); */
+    background-image: url("../images/bg.jpg");
+    background-size: 1500px 1500px;
 }
 #h2{
     background-color: orange;
