@@ -17,6 +17,7 @@ initializeWins();
 initializeLosses();
 game();
 
+// Function that resets the game
 function reset(){
      startGame.crystal1 = Math.floor(Math.random() * (12 - 1 + 1) + 1);
      startGame.crystal2 = Math.floor(Math.random() * (12 - 1 + 1) + 1);
