@@ -1,12 +1,22 @@
+.jumbotron,
+.container {
+    padding:0px 3px;
+    text-align: left;
+    }
 body{
     height:100%;
     width:100%;
 }
 #container{
-    width:100%;
-    /* background-color: aquamarine; */
-    background-image: url("../images/bg.jpg");
+    /* width:100%; */
+    /* background-image: url("../../bg.jpg"); */
     background-size: 1500px 1500px;
+}
+.card-text{
+    top:0;
+}
+#scoreCard{
+    top:0;
 }
 #h2{
     background-color: orange;
@@ -37,7 +47,7 @@ body{
 
 }
 #images{
-    float:left;
+    float:center;
 
 }
 #img1{
@@ -74,14 +84,14 @@ body{
 
 }
 
-#score{
+/* #score{
     background-color: blue;
     padding:5px;
     margin-top: 1%;
     width:155px;
     color: white;
 
-}
+} */
 /* .container{
     position:relative;
 }

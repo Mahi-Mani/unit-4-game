@@ -1,18 +1,80 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Crystal Collector</title>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    </head>
-    <body>
-        <div id="container">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Crystal Collector</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  </head>
+  <body>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+        <!-- <div id="container">
             <div id="h2">
             <h2>Crystal Collector!</h2>
-            </div>
+            </div> -->
+            <!-- Jumbotron -->
+            <div class="jumbotron jumbotron-fluid bg-dark text-light shadow-lg p-3 mb-5 bg-dark rounded">
+                    <div class="container">
+                      <h1 class="display-4 text-left">Crystal Collector!</h1>
+                      <div class="text-right">     
+                            <div class="random">
+                                        <h3><span id="random"></span></h3>
+                                    </div>                 
+                          <p><span id="youwin"></span></p>
+                            <p><span id="youlose"></span></p>
+                            <p>Wins : <span id="wins"></span></p>
+                            <p>Losses : <span id="losses"></span></p>
+                            <div>
+                                    <p>Your total score is</p>
+                                </div>
+                    
+                                <div>
+                                    <h3>Score : <span id="score"></span></h3>
+                                </div>
+                            </div>
 
-            <div id="h4">
+                      <p class="text-left">You will be given a random number at the start of the game.
+                            There are four crystals below. By clicking on the crystal you will add a <br>specific amounts of
+                            points to your total score. You win the game by matching your total score to random number, you lose the game if your 
+                            total score goes above the random number. The value of each crystal is hidden from you until you click on it.
+                            Each time when the game starts, the game will change the values of each crystal</p>
+                    </div>
+                  </div>
+                  <div id="container">
+
+                  <!-- Card for game rules -->
+                  <!-- <div class="card" style="width: 18rem;"> -->
+                        <!-- <div class="card-body"> -->
+                          <!-- <h3 class="card-title text-md-center font-weight-bold">Rules !</h3> -->
+                          <!-- <p class="card-text text-md-center alert alert-success">You will be given a random number at the start of the game.
+                                There are four crystals below. By clicking on the crystal you will add a specific amounts of
+                                points to your total score. You win the game by matching your total score to random number, you lose the game if your 
+                                total score goes above the random number. The value of each crystal is hidden from you until you click on it.
+                                Each time when the game starts, the game will change the values of each crystal
+
+                          </p> -->
+                          
+                        <!-- </div> -->
+                      <!-- </div> -->
+                      <br><br><br>  
+
+                      
+
+
+
+
+            <!-- <div id="h4">
                 <h4>You will be given a random number at the start of the 
                     <br>game.</h4>
                 <h4>There are four crystals below. By clicking on the crystal you <br>will add a specific amounts of
@@ -23,9 +85,9 @@
                 </h4>
                 <h4>The value of each crystal is hidden from you <br>until you click on it.<br></h4>
                 <h4>Each time when the game starts, the game will change the <br>values of each crystal</h4>
-            </div>
+            </div> -->
 
-            <div class="random">
+            <!-- <div class="random">
                 <div id="h3">
                     <h3><span id="random"></span></h3>
                 </div>
@@ -36,11 +98,11 @@
                     <p>Wins : <span id="wins"></span></p>
                     <p>Losses : <span id="losses"></span></p>
             </div>
-            </div>
+            </div> -->
 
             <br>
             
-            <div id="images">
+            <div id="images"class="text-center">
                 <!-- <img src = "assets/images/1.jpg"alt="diamond"width="100px"height="100px"id="img1"> -->
                 <button id="btn1"><img src="assets/images/1.jpg"id="img1"width="100px"height="100px"/></button>
                 <!-- <img src = "assets/images/2.jpg"alt="stone"width="100px"height="100px"id="img2"> -->
@@ -51,13 +113,37 @@
                 <button id="btn4"><img src="assets/images/4.jpg"id="img4"width="100px"height="100px"/></button>
             </div>
 
-            <div id="p1">
+            <!-- Card for Points -->
+            <!-- <div class="card" style="width: 18rem;"id="scoreCard">
+                    <div class="card-body">
+                      <h3 class="card-title text-md-center font-weight-bold"><span id="random"></span></h3>
+                      <div class="card-text text-md-center">
+                            <p><span id="youwin"></span></p>
+                            <p><span id="youlose"></span></p>
+                            <p>Wins : <span id="wins"></span></p>
+                            <p>Losses : <span id="losses"></span></p>
+                            <div>
+                                    <p>Your total score is</p>
+                                </div>
+                    
+                                <div>
+                                    <h3>Score : <span id="score"></span></h3>
+                                </div>
+
+                      </div>
+                      
+                    </div>
+                  </div> -->
+                
+            
+
+            <!-- <div id="p1">
                 <p>Your total score is</p>
             </div>
 
             <div id="score">
                 <h3>Score : <span id="score"></span></h3>
-            </div>
+            </div> -->
 
                         <!-- First Row
                         <div class="row">
@@ -77,7 +163,8 @@
                             </div> -->
 
 
-         </div>
+         
          <script src="assets/javascript/game.js"></script>
+        </div>
     </body>
 </html>
