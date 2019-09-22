@@ -1,7 +1,7 @@
 # Crystal Collector
 
 ## Site pictures
-![Site](image.jpg)
+![Site](CrystalCollector.gif)
 
 ## Technologies Used
 - HTML : used to create elements on the DOM
@@ -16,16 +16,13 @@
 
 ## Code Snippet
 ```Javascript
-
-function game(){
-$("#img1").on("click", function(){
-    // var crystal1 = Math.floor(Math.random() * (12 - 1 + 1) + 1);
-    console.log("Crystal 1: "+startGame.crystal1);
-    score = score + startGame.crystal1;
-    // score = score + $(this).val();
-    console.log("Score 1: "+score);   
-    populateScore();
-});
+//**************************************************************************
+//The below code snippet generated random number for each crystal upon click
+//**************************************************************************
+     startGame.crystal1 = Math.floor(Math.random() * (12 - 1 + 1) + 1);
+     startGame.crystal2 = Math.floor(Math.random() * (12 - 1 + 1) + 1);
+     startGame.crystal3 = Math.floor(Math.random() * (12 - 1 + 1) + 1);
+     startGame.crystal4 = Math.floor(Math.random() * (12 - 1 + 1) + 1);
 ```
 
 
